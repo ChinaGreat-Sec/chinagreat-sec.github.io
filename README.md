@@ -40,7 +40,7 @@ OOB IoT Sec Labs is an open community for IoT security researchers, focused on e
 
 | 模块 | 内容 |
 | --- | --- |
-| [漏洞研究](./vulnerabilities/) | CVE 分析、原创漏洞研究、设备安全与高价值未知漏洞挖掘 |
+| [漏洞研究](./vulnerabilities/) | CVE 分析、原创漏洞研究、品牌设备系列研究与高价值未知漏洞挖掘 |
 | [安全工具](./tools/) | 固件分析、网络扫描、漏洞利用辅助与防御加固工具 |
 | [学习资料](./resources/) | 书籍、论文、课程资源与面向 IoT 安全研究的学习路线 |
 | [实战记录](./writeups/) | CTF Writeup、真实漏洞复现、调试记录与工程化实践 |
@@ -53,7 +53,8 @@ OOB IoT Sec Labs is an open community for IoT security researchers, focused on e
 oob-iot-sec-labs.github.io/
 ├── vulnerabilities/        # 漏洞研究 | Vulnerability Research
 │   ├── CVE/                # CVE 漏洞分析
-│   └── research/           # 原创漏洞研究
+│   ├── research/           # 原创漏洞研究
+│   └── vendor-labs/        # 品牌设备研究
 ├── tools/                  # 安全工具 | Security Tools
 │   ├── firmware-analysis/  # 固件分析工具
 │   ├── network-scanning/   # 网络扫描工具

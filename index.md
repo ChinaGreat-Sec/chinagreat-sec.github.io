@@ -21,7 +21,7 @@ permalink: /
 <div class="home-grid">
   <div class="home-card">
     <h3>漏洞研究</h3>
-    <p>CVE 分析、原创漏洞研究、设备安全与高价值未知漏洞挖掘。</p>
+    <p>CVE 分析、原创漏洞研究、品牌设备系列研究与高价值未知漏洞挖掘。</p>
     <a href="{{ '/vulnerabilities/' | relative_url }}">进入模块 →</a>
   </div>
   <div class="home-card">

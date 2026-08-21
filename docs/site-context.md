@@ -90,8 +90,14 @@ oob-iot-sec-labs.github.io/
 │   │   ├── index.md          # CVE 列表页
 │   │   └── CVE-2022-42475/
 │   │       └── index.md      # 完整漏洞分析文章
-│   └── research/
-│       └── index.md          # 原创研究（占位）
+│   ├── research/
+│   │   └── index.md          # 原创研究（占位）
+│   └── vendor-labs/
+│       ├── index.md          # 品牌设备研究入口
+│       ├── citrix/
+│       │   └── index.md      # Citrix 专栏
+│       └── fortinet/
+│           └── index.md      # Fortinet 专栏
 ├── tools/index.md
 ├── resources/index.md
 ├── writeups/index.md
@@ -134,6 +140,49 @@ permalink: /path/to/page/
 ![图片描述]({{ '/assets/images/分类/文件名.png' | relative_url }})
 ```
 图片存放路径：`assets/images/<厂商或分类>/<CVE编号或项目名>/`
+
+品牌设备研究文章推荐使用更明确的配图路径：`assets/images/vulnerabilities/vendor-labs/<厂商>/<主题>/`
+
+---
+
+## 品牌设备研究
+
+品牌设备研究归属于 `vulnerabilities/`，用于按厂商和设备组织系列文章，覆盖环境搭建、漏洞复现、漏洞分析、调试记录与修复验证。
+
+路径规范：
+
+```text
+vulnerabilities/vendor-labs/<vendor>/<topic>/index.md
+assets/images/vulnerabilities/vendor-labs/<vendor>/<topic>/
+```
+
+示例：
+
+```text
+vulnerabilities/vendor-labs/citrix/environment-setup/index.md
+assets/images/vulnerabilities/vendor-labs/citrix/environment-setup/
+```
+
+文章 Front Matter 示例：
+
+```yaml
+---
+layout: default
+title: "Citrix ADC 环境搭建"
+permalink: /vulnerabilities/vendor-labs/citrix/environment-setup/
+category: vulnerability
+tags:
+  - Citrix
+  - Citrix ADC
+  - environment-setup
+vendor: Citrix
+product: Citrix ADC
+author: ChinaGreat-IoTSec
+date: YYYY-MM-DD
+---
+```
+
+品牌设备研究文章返回导航由全局布局自动生成，文章内不要手写返回按钮。
 
 ---
 
@@ -200,6 +249,10 @@ date: YYYY-MM-DD
 **添加完文章后记得更新：**
 1. `vulnerabilities/CVE/index.md` — 在统计表和列表中添加新条目
 2. `vulnerabilities/index.md` — 更新"最新收录"卡片
+
+如果文章属于品牌设备研究，还需要更新：
+1. `vulnerabilities/vendor-labs/index.md` — 厂商入口或模块说明
+2. `vulnerabilities/vendor-labs/<vendor>/index.md` — 对应厂商文章列表
 
 ---
 

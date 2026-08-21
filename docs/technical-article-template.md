@@ -4,6 +4,8 @@
 
 ## Front Matter
 
+CVE 漏洞分析文章路径：
+
 ```yaml
 ---
 layout: default
@@ -14,6 +16,25 @@ tags:
   - IoT
   - CVE
   - firmware
+vendor: Vendor
+product: Product
+author: GitHubUsername
+date: YYYY-MM-DD
+---
+```
+
+品牌设备研究文章路径：
+
+```yaml
+---
+layout: default
+title: "Vendor Product 环境搭建"
+permalink: /vulnerabilities/vendor-labs/vendor/topic/
+category: vulnerability
+tags:
+  - IoT
+  - vendor
+  - environment-setup
 vendor: Vendor
 product: Product
 author: GitHubUsername
@@ -115,7 +136,7 @@ date: YYYY-MM-DD
 - [ ] 标题层级按 `# -> ## -> ### -> ####` 递进，不跳级。
 - [ ] Front Matter 包含 `title`、`category`、`tags`、`vendor`、`product`、`author`、`date`。
 - [ ] 摘要、基本信息、影响范围、研究环境、漏洞分析、利用验证、修复建议、参考资料、免责声明均已包含。
-- [ ] 图片已放入 `assets/images/<厂商或分类>/<项目名>/`，并使用 `relative_url` 引用。
+- [ ] 图片已放入 `assets/images/<厂商或分类>/<项目名>/` 或 `assets/images/vulnerabilities/vendor-labs/<厂商>/<主题>/`，并使用 `relative_url` 引用。
 - [ ] 代码块围栏成对，语言标识尽量明确。
 - [ ] 外部链接可访问，引用来源清晰。
 - [ ] 不在文章中展开无必要的授权绕过、恶意利用或违法用途细节。

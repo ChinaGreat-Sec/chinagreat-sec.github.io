@@ -43,7 +43,9 @@
       </section>
     </div>
 
-    {% if page.category == "vulnerability" and page.url contains "/vulnerabilities/CVE/" %}
+    {% if page.category == "vulnerability" and page.url contains "/vulnerabilities/vendor-labs/" %}
+      <a href="{{ '/vulnerabilities/vendor-labs/' | relative_url }}" class="article-back-nav" title="返回品牌设备研究">返回品牌设备研究</a>
+    {% elsif page.category == "vulnerability" and page.url contains "/vulnerabilities/CVE/" %}
       <a href="{{ '/vulnerabilities/CVE/' | relative_url }}" class="article-back-nav" title="返回 CVE 列表">返回 CVE 列表</a>
     {% endif %}
 

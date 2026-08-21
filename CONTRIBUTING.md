@@ -89,6 +89,7 @@ git push origin vuln/CVE-2024-XXXXX
 | 类型 | 格式 | 示例 |
 | --- | --- | --- |
 | 漏洞文章 | `vuln/CVE-XXXX-XXXXX` | `vuln/CVE-2024-12345` |
+| 品牌设备研究 | `vuln/<厂商>-<主题>` | `vuln/citrix-environment-setup` |
 | 工具收录 | `tools/add-工具名` | `tools/add-binwalk` |
 | 学习资料 | `resources/add-简述` | `resources/add-iot-books` |
 | 实战记录 | `writeups/设备名` | `writeups/tplink-archer` |
@@ -123,10 +124,11 @@ fix: correct CVE index link
 | --- | --- |
 | CVE 分析 | `vulnerabilities/CVE/CVE-XXXX-XXXX/index.md` |
 | 原创研究 | `vulnerabilities/research/<名称>/index.md` |
+| 品牌设备研究 | `vulnerabilities/vendor-labs/<厂商>/<主题>/index.md` |
 | 工具收录 | `tools/<分类>/index.md` |
 | 学习资料 | `resources/<分类>/index.md` |
 | Writeup | `writeups/<设备名-日期>/index.md` |
-| 相关图片 | `assets/images/<厂商或分类>/<项目名>/` |
+| 相关图片 | `assets/images/<厂商或分类>/<项目名>/` 或 `assets/images/vulnerabilities/vendor-labs/<厂商>/<主题>/` |
 
 ---
 
@@ -150,6 +152,11 @@ fix: correct CVE index link
 
 1. `vulnerabilities/CVE/index.md`：统计表与漏洞列表
 2. `vulnerabilities/index.md`：最新收录卡片
+
+新增品牌设备研究文章后至少同步更新：
+
+1. `vulnerabilities/vendor-labs/index.md`：厂商入口或文章说明
+2. `vulnerabilities/vendor-labs/<厂商>/index.md`：对应厂商文章列表
 
 详细模板见 [`docs/site-context.md`](docs/site-context.md#漏洞文章模板)。
 

@@ -16,6 +16,9 @@ permalink: /vulnerabilities/
 <h3><a href="{{ '/vulnerabilities/research/' | relative_url }}">原创研究</a></h3>
 <p>团队独立挖掘的漏洞研究成果，涵盖路由器、摄像头、智能家居等 IoT 设备。</p>
 
+<h3><a href="{{ '/vulnerabilities/vendor-labs/' | relative_url }}">品牌设备研究</a></h3>
+<p>按厂商与设备组织系列文章，覆盖环境搭建、漏洞复现、漏洞分析与修复验证。</p>
+
 <h2>最新收录</h2>
 
 <div style="border:1px solid #444; border-radius:8px; padding:14px 18px; background:#111; margin:8px 0;">
